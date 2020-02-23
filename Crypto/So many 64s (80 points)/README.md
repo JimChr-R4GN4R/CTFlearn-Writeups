@@ -12,6 +12,6 @@ So coded a script for this situation.
 
 You can check it in this folder.
 
-So just put the text in it and got the flag!
+So just put the text in it and executed it <code>python3 multi_base64_decoder.py</code> and got the flag!
 
 Flag: ABCTF{pr3tty_b4s1c_r1ght?}
