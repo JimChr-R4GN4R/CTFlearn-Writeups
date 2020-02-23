@@ -2,25 +2,25 @@ There are plenty of bits of randomness in the key. This has to be secure!
 
 I am so confident, that I am sharing a snippet of my implementation
 <code>
-import random
-  
-base = random.getrandbits(2048)
+  import random
 
-p = next_prime(base + random.getrandbits(256))
+  base = random.getrandbits(2048)
 
-q = next_prime(base + random.getrandbits(256))
+  p = next_prime(base + random.getrandbits(256))
 
-n = p * q
+  q = next_prime(base + random.getrandbits(256))
 
-e = 65537
+  n = p * q
 
-print("e = ", e)
+  e = 65537
 
-print("n = ", n)
+  print("e = ", e)
 
-c = power_mod(m, e, n)
+  print("n = ", n)
 
-print("c = ", c)
+  c = power_mod(m, e, n)
+
+  print("c = ", c)
 
 </code>
 
