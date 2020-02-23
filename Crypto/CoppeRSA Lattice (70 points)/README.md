@@ -2,16 +2,26 @@ There are plenty of bits of randomness in the key. This has to be secure!
 
 I am so confident, that I am sharing a snippet of my implementation
 <code>
-import random\n
+import random
+  
 base = random.getrandbits(2048)
+
 p = next_prime(base + random.getrandbits(256))
+
 q = next_prime(base + random.getrandbits(256))
+
 n = p * q
+
 e = 65537
+
 print("e = ", e)
+
 print("n = ", n)
+
 c = power_mod(m, e, n)
+
 print("c = ", c)
+
 </code>
 
 ########################################################
