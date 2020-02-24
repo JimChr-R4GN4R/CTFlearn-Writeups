@@ -46,6 +46,6 @@ So we have to do this thing with the f in field.txt
 
 I made a python3 script for that!
 
-Just put the f value in it and you will get the flag!
+Just put the f value in it and you will get the flag by typing <code>python3 Finite_field_arithmetic_decoder.py</code>!
 
 Flag: flag{p0lynom1als_4r3_k00l}
