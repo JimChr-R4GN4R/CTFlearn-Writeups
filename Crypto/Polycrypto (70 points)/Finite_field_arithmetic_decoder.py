@@ -8,7 +8,7 @@ Polynomial = 'x^206 + x^205 + x^202 + x^201 + x^198 + x^197 + x^195 + x^194 + x^
 full_binary = '' # create full_binary variable
 plus_one = '' # create plus_one variable
 
-for i in range(0,int(Polynomial[0])): # Polynomial[0] is the highest number (in this example, the highest number is 206),                   #
+for i in range(0,int(Polynomial[0])): # Polynomial[0] is the highest number (in this example, the highest number is 206), #
                                       # so we want all the calculations with those binaries to have this amount of digits #
 
   full_binary += '0' # make full_binary the beginning binary number 000000000.... (256 digits)
