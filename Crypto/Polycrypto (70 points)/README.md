@@ -42,7 +42,7 @@ Next we have <code>x</code> this is the same like <code>x^1</code>, so : <code>0
 And finaly we will add +1 : <code>01010011</code>
 
 
-
+\<Continues\>
 
 
 Flag: flag{p0lynom1als_4r3_k00l}
