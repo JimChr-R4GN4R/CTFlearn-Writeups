@@ -39,3 +39,7 @@ Binary2Text = str(Binary2Text) # Make it a string so I can remove b' and ' at th
 
 print(Binary2Text.replace("b'","").replace("'","")) # Flag!
   
+########## Useful sources for the script ##########
+# https://beginnersbook.com/2018/03/python-program-to-add-two-binary-numbers/
+# https://stackoverflow.com/questions/7396849/convert-binary-to-ascii-and-vice-versa
+# https://en.wikipedia.org/wiki/Finite_field_arithmetic
