@@ -15,15 +15,15 @@ At some point I found this:
 //////////////////////////////////////////////////////////////////////
 __MACOSX/UX
 
- O^I
+O^I
  
 __MACOSX/Secret Stuff.../UX
 
- O^I
+O^I
  
 __MACOSX/Secret Stuff.../Don't Open This.../UX
 
-        O^I
+O^I
         
 __MACOSX/Secret Stuff.../Don't Open This.../._I Warned You.jpegUX
 
@@ -35,13 +35,13 @@ Secret Stuff.../UX
 
 Secret Stuff.../.DS_StoreUX
 
-        O^I
+O^I
         
 Secret Stuff.../Don't Open This.../UX
 
 Secret Stuff.../Don't Open This.../.DS_StoreUX
 
-        O^I
+O^I
         
 Secret Stuff.../Don't Open This.../I Warned You.jpegUX
 
