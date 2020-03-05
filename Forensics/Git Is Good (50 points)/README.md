@@ -65,7 +65,7 @@ commit 195dd65b9f5130d5f8a435c5995159d4d760741b
 Author: LaScalaLuke <lascala.luke@gmail.com>
 Date:   Sun Oct 30 14:32:44 2016 -0400
 
-    Edited files
+Edited files
 
 diff --git a/flag.txt b/flag.txt
 index c5250d0..8684e68 100644
