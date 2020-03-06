@@ -32,7 +32,7 @@ flag{3l1t3_3x1f_4uth0r1ty_dud3br0}
 
 Flag: flag{3l1t3_3x1f_4uth0r1ty_dud3br0}
 
-
+=======================================================================
 
 Another method as the challenge recommends is exif!
 
