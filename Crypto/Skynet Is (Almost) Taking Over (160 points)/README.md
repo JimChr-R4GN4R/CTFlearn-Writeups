@@ -34,7 +34,7 @@ You can find a good source here about it:
 
 https://github.com/ashutosh1206/Crypton/tree/master/RSA-encryption/Attack-Hastad-Broadcast
 
-So the concept of here is:
+
 
 We can find <code>p1,p2,p3</code> with this way:
 
@@ -68,5 +68,9 @@ The difference between `n1/p1` and `n1//p1` is this:
 q1 = n1/p1 = 9.033062119150775e+108
 q1 = n1//p1 = 9033062119150775356115605417902072538098631081058159551678022048966520848600866260935959311606867286026034943
 ```
+
+So now we have `e`,`n`,`q`,`p` and `c` .
+
+So we can find `phi = (q - 1) * (p - 1)` 
 
 Flag: flag{will_he_be_back}
