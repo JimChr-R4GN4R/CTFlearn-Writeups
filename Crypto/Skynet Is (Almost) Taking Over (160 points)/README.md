@@ -26,7 +26,7 @@ n3: 4319722681999541425088048905541358539050368101918059477278159984220747169304
 
 #########################################################################################
 
-So we have <code>e</code> , some <code>n</codes> and their <code>c</code> .
+So we have `e` , some `n` and their `c` .
 
 After some research I found that we can do 'Hastad's Broadcast Attack'
 
