@@ -26,4 +26,38 @@ n3: 4319722681999541425088048905541358539050368101918059477278159984220747169304
 
 #########################################################################################
 
+So we have <code>e</code> , some <code>n</codes> and their <code>c</code> .
+
+After some research I found that we can do 'Hastad's Broadcast Attack'
+
+You can find a good source here about it:
+
+https://github.com/ashutosh1206/Crypton/tree/master/RSA-encryption/Attack-Hastad-Broadcast
+
+So the concept of here is:
+
+We can find <code>p1,p2,p3</code> with this way:
+
+`
+p1 = gcd(n1,n2)
+p2 = gcd(n2,n3)
+p3 = gcd(n1,n3)
+`
+GCD(n1,n2) is the `Greatest Common Divisor` and can be calculated with this python3 script:
+
+`
+n1_value = n1_NUMBER
+n2_value = n2_NUMBER
+
+def ComputeGCD(n1,n2):
+    if n2==0:
+        return n1
+    else:
+        return ComputeGCD(n2 , n1 % n2)
+
+print(ComputeGCD(n1_value,n2_value))
+`
+
+
+
 Flag: flag{will_he_be_back}
