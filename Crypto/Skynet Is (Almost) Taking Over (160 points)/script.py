@@ -64,3 +64,4 @@ print("plaintext3 = ",pl3_from_hex_to_ascii)
 
 ################# Useful sorces for the script #################
 # https://github.com/JimChr-R4GN4R/picoCTF-writeups/blob/master/2019/Cryptography/rsa-pop-quiz%20(200%20points)/p-ct-e-n-_q-_phi-_d_pl.py
+# https://github.com/ashutosh1206/Crypton/tree/master/RSA-encryption/Attack-Hastad-Broadcast
