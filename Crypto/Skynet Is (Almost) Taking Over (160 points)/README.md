@@ -45,7 +45,7 @@ p3 = gcd(n1,n3)
 `
 GCD(n1,n2) is the `Greatest Common Divisor` and can be calculated with this python3 script:
 
-`
+```
 n1_value = n1_NUMBER
 n2_value = n2_NUMBER
 
@@ -56,7 +56,7 @@ def ComputeGCD(n1,n2):
         return ComputeGCD(n2 , n1 % n2)
 
 print(ComputeGCD(n1_value,n2_value))
-`
+```
 
 
 
