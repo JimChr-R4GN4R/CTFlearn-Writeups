@@ -64,9 +64,9 @@ So now from `n` and `p`, we can find `q` with this calculation:
 
 The difference between `n1/p1` and `n1//p1` is this:
 
-`
+```
 q1 = n1/p1 = 9.033062119150775e+108
 q1 = n1//p1 = 9033062119150775356115605417902072538098631081058159551678022048966520848600866260935959311606867286026034943
-`
+```
 
 Flag: flag{will_he_be_back}
