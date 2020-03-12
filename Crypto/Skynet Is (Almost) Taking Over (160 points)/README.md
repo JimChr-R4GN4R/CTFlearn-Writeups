@@ -38,11 +38,11 @@ So the concept of here is:
 
 We can find <code>p1,p2,p3</code> with this way:
 
-`
+```
 p1 = gcd(n1,n2)
 p2 = gcd(n2,n3)
 p3 = gcd(n1,n3)
-`
+```
 GCD(n1,n2) is the `Greatest Common Divisor` and can be calculated with this python3 script:
 
 ```
