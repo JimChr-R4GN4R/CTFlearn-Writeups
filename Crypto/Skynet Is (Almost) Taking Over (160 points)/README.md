@@ -77,9 +77,37 @@ and when we find all `phi`s, then we can find `d = e^(-1) MOD phi` with this pyt
 
 ```
 from Crypto.Util.number import inverse
+
+e = e_NUMBER
+ph = phi_NUMBER
+
 d = inverse(e, phi)
 ```
 
+So now the only we need to find to find is `plaintext` by `c`,`d` and `n` .
 
+We can find plaintext with this simple python3 script:
+
+```
+c = c_NUMBER
+d = d_NUMBER
+n = n_NUMBER
+
+plaintext = pow(c, d, n) # (ciphertext^d) MOD n
+```
+
+When we get all plaintexts,then we have to convert them from text to hex and then to ascii.
+
+We can do it with this script:
+```
+pl = plaintext_NUMBER
+
+pl_hex_converted = hex(pl).split('x')[-1] # convert plaintext to hex
+pl_from_hex_to_ascii = bytearray.fromhex(pl_hex_converted).decode() # convert hex to ascii
+```
+So `pl_from_hex_to_ascii` is our flag!
+
+I made a quick script that does all these steps I descripted above,so you can just type `python3 script.py`
+and you will see that all plaintext variables are the same flag!
 
 Flag: flag{will_he_be_back}
