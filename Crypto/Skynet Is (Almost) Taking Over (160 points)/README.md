@@ -73,4 +73,13 @@ So now we have `e`,`n`,`q`,`p` and `c` .
 
 So we can find `phi = (q - 1) * (p - 1)` 
 
+and when we find all `phi`s, then we can find `d = e^(-1) MOD phi` with this python3 script:
+
+```
+from Crypto.Util.number import inverse
+d = inverse(e, phi)
+```
+
+
+
 Flag: flag{will_he_be_back}
