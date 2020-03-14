@@ -49,11 +49,12 @@ So the result is:
 
 So our final script is:
 
-`encoded = 'jrjerwhzkrexar'
+```
+encoded = 'jrjerwhzkrexar'
 key = chr(110)
 key = key + key + chr(ord(key)-4)
 print(DecodeDat(key=key,text=encoded))
-`
+```
 
 We have the last one which does not make sense cause of the strange function called 'DecodeDat'...
 
@@ -61,10 +62,12 @@ I tried to execute this python code but I got only an error...
 
 Then I was curious what key's final value was...So I updated the code:
 
-`encoded = 'jrjerwhzkrexar'
+```
+encoded = 'jrjerwhzkrexar'
 key = chr(110)
 key = key + key + chr(ord(key)-4)
-print(key)`
+print(key)
+```
 
 and got the final key: `nnj`
 
