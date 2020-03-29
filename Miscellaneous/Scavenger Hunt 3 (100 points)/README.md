@@ -6,8 +6,8 @@ Good luck my friend You'll need it tonight
 
 ####################################################################################################################
 
-This challenge is very special because I solved it with my beloved sister!
-If she wasn't here to help me at the last part of the challenge,I am not sure I would solve it <3
+This challenge is very special because I solved it with my beloved sister who has no idea of CTFs!
+If she wasn't here to help me at the last part of the challenge,I am not sure that I would solve it <3
 
 So let's start!
 
