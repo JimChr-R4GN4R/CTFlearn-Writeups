@@ -41,7 +41,7 @@ Then it showed this puzzle which I should solve.
 
 It took me some time around 30 minutes but finally solved it! (not all,but it was enough :P)
 
-You can find the unsolved puzzle in `unsolved_puzzle.png` and the solved one in `solved_puzzle.png` 
+You can find the solved one in `solved_puzzle.png` 
 
 If you see closely up and left of the puzzle,there is a counter that shows you when you put a part at the right place.
 
