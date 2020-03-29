@@ -65,4 +65,20 @@ I supposed that his name was here:
 
 ![Image1](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image1.png)
 
+But I could not figure out what was his name...
+
+Then I brought here my sister :D !!!
+
+And we figured out that it was saying 'heije' XDXDXD
+
+So we searched heije american general (American because you can see at the background the US flag and general because that's what I was thinking...)
+
+We found nothing and we decided to just search on google images 'american general' ...
+
+After much of funny scrolling we found this one which had the same hat symbol!!!:
+
+![Image3](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image3.png)
+
+
+
 Flag: CTFlearn{Grace Hopper}
