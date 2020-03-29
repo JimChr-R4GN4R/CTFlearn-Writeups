@@ -79,6 +79,30 @@ After much of funny scrolling we found this one which had the same hat symbol!!!
 
 ![Image3](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image3.png)
 
+If you check closely, you will see that it has two anchors. That means that our guy is a general in naval army!!!
+
+Right away we changed our search to 'american general naval'
+
+And after some scrolling and checking we found a photo that had a similar background...
+
+Then we started checking and viewing photos based on this background until this one:
+
+![Image4](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image4.png)
+
+So you see something...
+
+![Image5](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image5.png)
+
+This one look familiar to me...
+
+![Image6](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image6.png)
+
+Bingo!!!
+
+
+
+Let's give some more attention to this photo...
+
 
 
 Flag: CTFlearn{Grace Hopper}
