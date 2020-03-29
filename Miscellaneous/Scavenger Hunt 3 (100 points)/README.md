@@ -107,4 +107,8 @@ Tried it right away and........IT WAS ACCEPTED
 
 ![Image7](https://appstickers-cdn.appadvice.com/1158454115/819397787/b3355afde61d1bf4593a65146f980891-8.gif)
 
+This challenge is dedicated to my beloved sister <3 Without her I would not solve it XD.
+
+We had really funny time! I suggest to you to solve challenges with your bro/sis if you stuck somewhere XD
+
 Flag: CTFlearn{Grace Hopper}
