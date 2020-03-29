@@ -41,6 +41,18 @@ It took me some time around 30 minutes but finally solved it! (not all,but it wa
 
 You can find the unsolved puzzle in `unsolved_puzzle.png` and the solved one in `solved_puzzle.png` 
 
+If you see closely up and left of the puzzle,there is a counter that shows you when you put a part at the right place.
 
+With it's help you can solve it ;)
+
+So after solving it I copied the link which shows.
+
+`https://goo.gl/4fEuSJ`
+
+So I entered this address and got in this google drive file:
+
+https://drive.google.com/file/d/0B1jsUOdZsv0hNzBiclljcU9PVU0/view
+
+You can view it's content in `google_file_text.txt` .
 
 Flag: CTFlearn{Grace Hopper}
