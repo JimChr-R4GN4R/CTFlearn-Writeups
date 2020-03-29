@@ -35,7 +35,9 @@ http://www.epuzzle.info/puzzlegraj5.php?prefs=3&obrazek=214713&szer=936&wys=525
 
 Then visited the link and gave my name.
 
-Then it showed a puzzle which I should solve.
+Then it showed this puzzle which I should solve.
+
+![Image2](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/unsolved_puzzle.png)
 
 It took me some time around 30 minutes but finally solved it! (not all,but it was enough :P)
 
