@@ -55,4 +55,12 @@ https://drive.google.com/file/d/0B1jsUOdZsv0hNzBiclljcU9PVU0/view
 
 You can view it's content in `google_file_text.txt` .
 
+File's name is 'Who is this?.txt'
+
+Then I opened it with notepad and zoomed out as much as I could and realized that I should find his name...
+
+I supposed that his name was here:
+
+![Image1](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image1.png)
+
 Flag: CTFlearn{Grace Hopper}
