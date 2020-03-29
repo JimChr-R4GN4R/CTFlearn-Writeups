@@ -89,7 +89,7 @@ Then we started checking and viewing photos based on this background until this 
 
 ![Image4](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image4.png)
 
-So you see something...
+So, do you see something...???
 
 ![Image5](https://github.com/JimChr-R4GN4R/CTFlearn-Writeups/blob/master/Miscellaneous/Scavenger%20Hunt%203%20(100%20points)/image5.png)
 
@@ -99,10 +99,12 @@ This one look familiar to me...
 
 Bingo!!!
 
+So just searched on google 'Grace Murray Hopper' and got this:
 
+`Grace Hopper - Wikipedia`
 
-Let's give some more attention to this photo...
+Tried it right away and........IT WAS ACCEPTED
 
-
+![Image7](https://appstickers-cdn.appadvice.com/1158454115/819397787/b3355afde61d1bf4593a65146f980891-8.gif)
 
 Flag: CTFlearn{Grace Hopper}
