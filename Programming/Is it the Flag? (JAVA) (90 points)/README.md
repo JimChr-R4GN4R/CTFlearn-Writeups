@@ -225,6 +225,7 @@ and finally we will add an if down of it:
 
 ```
             if int(java_string_hashcode(final_ciphertext.lower())) == 1472541258:
+	    	print(final_ciphertext)
 ```
 
 Here we see firstly: `final_ciphertext.lower()` which means that `final_ciphertext`'s letters will be lowercase.
@@ -261,6 +262,27 @@ So we have our flag!
 But wait... The java script also has this: `str.hashCode() == 1471587914` which the value is different of ours.
 
 That means that some letters are in lowercase and some are in uppercase.
+
+So let's make another bruteforce script that will test all possible lower and uppercase combinations!
+
+First we will keep our `.hashCode()` function . so let's add it first...
+
+```
+def java_string_hashcode(s):
+    h = 0
+    for c in s:
+        h = (31 * h + ord(c)) & 0xFFFFFFFF
+    return ((h + 0x80000000) & 0xFFFFFFFF) - 0x80000000
+```
+
+Next we will add our `text` and will split it into 6 parts and then we will set our `final_text` variable:
+
+```
+text = "0GHZXY"
+target = 1471587914
+
+final_text = ""
+```
 
 
 
