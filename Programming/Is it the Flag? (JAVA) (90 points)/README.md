@@ -92,5 +92,77 @@ We will split our ciphertext to 6 parts:
 
 ciphertext's every part has totally 10 + 26 = 36 characters (0123456789abcdefghijklmnopqrstuvwxyz)
 
+The plan is to make loops that at every repeat,they will shift +1 every part of our ciphertext.
+
+So I found this: https://stackoverflow.com/questions/12797067/how-can-i-do-a-1-b-in-python
+
+From there we get this thing:
+
+```
+Our first ciphertext's character is: ciphertext[0] = "0"
+
+chr(ord(ciphertext[0]) + 1 = "1"
+
+If ciphertext[0] = "a"
+then
+chr(ord(ciphertext[0]) + 1 = "b"
+```
+
+So at the beginning I did this:
+```
+ciphertext = list(ciphertext)
+
+for shift_0 in range(0,36):
+  
+  letter_0 = chr(ord(ciphertext[0]) + shift_0)
+  print(letter_0)
+```
+But I was getting this:
+```
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+:
+;
+<
+=
+>
+?
+@
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+```
+
+First,we need to reach Z,so we should add +7, so the final main loop structure is:
+```
+for shift_0 in range(0,43):
+  
+  letter_0 = chr(ord(ciphertext[0]) + shift_0)
+```
+
 
 Flag: CTFlearn{0gHzxY}
