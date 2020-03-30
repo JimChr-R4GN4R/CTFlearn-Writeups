@@ -290,6 +290,39 @@ final_text = ""
 target = 1471587914
 ```
 
+Next I decided to follow this bruteforce method:
+
+We will have another variable called `final_bin`.
+
+This variable at the beginning will be
+
+final_bin = "000000"
+
+and will be rising with binary way.
+
+At the places where is zero,the letters will be zero and where is one, letter will be upper.
+
+Examples:
+```
+final_bin = "000000"
+text      = "0ghzxy"
+
+final_bin = "000001"
+text      = "0ghZxy"
+
+final_bin = "100110"
+text      = "0ghZXy"
+
+etc.
+```
+
+
+
+
+
+
+
+
 
 
 Flag: CTFlearn{0gHzxY}
