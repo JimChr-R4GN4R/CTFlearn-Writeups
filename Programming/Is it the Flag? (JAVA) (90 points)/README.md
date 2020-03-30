@@ -275,13 +275,19 @@ def java_string_hashcode(s):
     return ((h + 0x80000000) & 0xFFFFFFFF) - 0x80000000
 ```
 
-Next we will add our `text` and will split it into 6 parts and then we will set our `final_text` variable:
+Next we will add our `text` and will split it into 6 parts,
+
+then we will set our `final_text` variable
+
+and at last we will add our `target` value:
 
 ```
 text = "0GHZXY"
 target = 1471587914
 
 final_text = ""
+
+target = 1471587914
 ```
 
 
