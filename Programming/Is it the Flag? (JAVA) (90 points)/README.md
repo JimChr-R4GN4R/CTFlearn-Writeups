@@ -308,7 +308,7 @@ final_bin = "000000"
 text      = "0ghzxy"
 
 final_bin = "000001"
-text      = "0ghZxy"
+text      = "0ghzxY"
 
 final_bin = "100110"
 text      = "0ghZXy"
@@ -316,6 +316,16 @@ text      = "0ghZXy"
 etc.
 ```
 
+We will make a for that at every repeat will add +1 into `final_bin`
+
+`final_bin`'s minimum value is `000000 = 0` and the maximum is `111111 = 63`
+
+That means our for will be like this:
+```
+for i in range(0,64): # it's until 64,because at 63 will stop
+	....
+	....
+```
 
 
 
