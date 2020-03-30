@@ -157,11 +157,16 @@ R
 S
 ```
 
-First,we need to reach Z,so we should add +7, so the final main loop structure is:
+First,we need to reach Z,so we should add +7,
+and second we do not need special characters,so we will add an if down of the shift calculation.
+so the final main loop structure is:
 ```
 for shift_0 in range(0,43):
   
   letter_0 = chr(ord(ciphertext[0]) + shift_0)
+  
+    if chr(ord(ciphertext[0]) + 1) == ":":
+    	letter_0 = "a"
 ```
 
 
