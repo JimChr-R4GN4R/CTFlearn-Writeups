@@ -327,12 +327,92 @@ for i in range(0,64): # it's until 64,because at 63 will stop
 	....
 ```
 
+next we will add this command to give `i`'s binary value to `number`:
+```
+for i in range(0,64):
+	number = bin(i)
+```
 
+and then we will add this command to add `number`'s value to `final_text` and make it have 6 digits:
+```
+final_bin = "{:06d}".format(int(number))
+```
+Example:
+```
+if number = 1
+final_bin = "{:06d}".format(int(number)) = "000001"
+if number = 3
+final_bin = "{:06d}".format(int(number)) = "000011"
+etc...
+```
+I found this here: https://stackoverflow.com/questions/134934/display-number-with-leading-zeros
 
+and then we will split it's parts:
+```
+final_bin = list(final_bin)
+```
 
+So now we have this:
+```
+for i in range(0,64):
+  number = bin(i)
+  number = number.replace('0b','')
 
+  final_bin = "{:06d}".format(int(number))
+  final_bin = list(final_bin)
+```
 
+Now at every repeat we will make 6 ifs that check if every `final_bin`'s part is zero or one and if is 1,then same `text`'s part will be uppercase else,it will be lowercase.
 
+So here are our ifs:
+```
+for i in range(0,64):
 
+  number = bin(i)
+  number = number.replace('0b','')
+
+  final_bin = "{:06d}".format(int(number))
+  
+  final_bin = list(final_bin)
+  
+  if int(final_bin[0]) == 1:
+    text[0] = text[0].lower()
+  else:
+    text[0] = text[0].upper()
+    
+  if int(final_bin[1]) == 1:
+    text[1] = text[1].lower()
+  else:
+    text[1] = text[1].upper()
+    
+  if int(final_bin[2]) == 1:
+    text[2] = text[2].lower()
+  else:
+    text[2] = text[2].upper()
+    
+  if int(final_bin[3]) == 1:
+    text[3] = text[3].lower()
+  else:
+    text[3] = text[3].upper()
+    
+  if int(final_bin[4]) == 1:
+    text[4] = text[4].lower()
+  else:
+    text[4] = text[4].upper()
+    
+  if int(final_bin[5]) == 1:
+    text[5] = text[5].lower()
+  else:
+    text[5] = text[5].upper()
+```
+
+Now we will make `final_text` variable which will merge all text's parts that are uppercase and lowercase
+
+Then we will send it to our `.hashCode()` function
+
+And lastly will :
+```
+  final_text =  str(text[0]) + str(text[1]) + str(text[2]) + str(text[3]) + str(text[4]) + str(text[5])
+```
 
 Flag: CTFlearn{0gHzxY}
