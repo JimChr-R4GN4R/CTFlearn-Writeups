@@ -157,9 +157,11 @@ R
 S
 ```
 
-First,we need to reach Z,so we should add +7,
+First,we need to reach Z,so we should add +7 at 36,
+
 and second we do not need special characters,so we will add an if down of the shift calculation.
-so the final main loop structure is:
+
+So the final main loop structure is:
 ```
 for shift_0 in range(0,43):
   
@@ -169,5 +171,46 @@ for shift_0 in range(0,43):
     	letter_0 = "a"
 ```
 
+This is our completed loop:
+```
+for shift_0 in range(0,43):
+  
+  letter_0 = chr(ord(ciphertext[0]) + shift_0)
+
+  if chr(ord(ciphertext[0]) + 1) == ":":
+    letter_0 = "a"
+
+  for shift_1 in range(0,43):
+    letter_1 = chr(ord(ciphertext[1]) + shift_1)
+
+    if chr(ord(ciphertext[1]) + 1) == ":":
+      letter_1 = "a"
+
+    for shift_2 in range(0,43):
+      letter_2 = chr(ord(ciphertext[2]) + shift_2)
+
+      if chr(ord(ciphertext[2]) + 1) == ":":
+        letter_2 = "a"
+
+      for shift_3 in range(0,43):
+        letter_3 = chr(ord(ciphertext[3]) + shift_3)
+
+        if chr(ord(ciphertext[3]) + 1) == ":":
+          letter_3 = "a"
+
+        for shift_4 in range(0,43):
+          letter_4 = chr(ord(ciphertext[4]) + shift_4)
+
+          if chr(ord(ciphertext[4]) + 1) == ":":
+            letter_4 = "a"
+
+          for shift_5 in range(0,43):
+            letter_5 = chr(ord(ciphertext[5]) + shift_5)
+
+            if chr(ord(ciphertext[5]) + 1) == ":":
+              letter_5 = "a"
+```
+
+So now we will add 
 
 Flag: CTFlearn{0gHzxY}
