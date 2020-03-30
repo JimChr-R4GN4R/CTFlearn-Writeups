@@ -408,11 +408,42 @@ for i in range(0,64):
 
 Now we will make `final_text` variable which will merge all text's parts that are uppercase and lowercase
 
-Then we will send it to our `.hashCode()` function
+Then we will send it to our `.hashCode()` function and will asign it's result to `result` variable
 
-And lastly will :
+And lastly will add an if that checks if `result` is the same as our `target`'s value:
 ```
   final_text =  str(text[0]) + str(text[1]) + str(text[2]) + str(text[3]) + str(text[4]) + str(text[5])
+  result = java_string_hashcode(final_text)
+  
+  if int(result) == target:
+    print(final_text)
 ```
+
+Now we are almost ready.
+
+The only thing is that at the beginning of the loop,we change `final_bin`'s string value.But after the first repeat,it's type will change to list.
+
+So we have to make it change it's type to string at every beginning of all repeats.
+
+So just add this command at the beginning of the loop:
+```
+for i in range(0,64):
+  final_bin = str(final_bin)
+  ....
+  ....
+```
+You can find the final script in `script2.py`
+
+After we run it...
+```
+python3 script2.py
+```
+
+After some seconds we will take this result:
+```
+0gHzxY
+0gHzxY
+```
+I do not know why it print's it two times though :P , but it works!!!
 
 Flag: CTFlearn{0gHzxY}
