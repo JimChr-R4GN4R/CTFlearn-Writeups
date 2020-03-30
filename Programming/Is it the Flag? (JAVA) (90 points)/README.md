@@ -6,7 +6,7 @@ The flag is a String of 6 alphanumeric characters. Capture it.
 
 https://mega.nz/#!SHp1xCAL!I9-Zy4kwu_JY019MiYZ6CzGey8sJ6UvqE-ML2idmkrs
 
-#################################################################################################
+#############################################################################################
 
 From description we see that the flag has total 6 alphanumeric characters.
 
