@@ -54,8 +54,8 @@ for i in range(0,64):
   else:
     text[5] = text[5].upper()
     
-  text1 =  str(text[0]) + str(text[1]) + str(text[2]) + str(text[3]) + str(text[4]) + str(text[5])
-  result = java_string_hashcode(text1)
+  final_text =  str(text[0]) + str(text[1]) + str(text[2]) + str(text[3]) + str(text[4]) + str(text[5])
+  result = java_string_hashcode(final_text)
   
   if int(result) == target:
-    print(text1)
+    print(final_text)
