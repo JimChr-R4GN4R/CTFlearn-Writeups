@@ -211,6 +211,57 @@ for shift_0 in range(0,43):
               letter_5 = "a"
 ```
 
-So now we will add 
+So now we will add our `final_ciphertext` variable which will take the `letter_x` variables.
+
+Firstly we will set this variable at the beginning of the code before loops:
+
+`final_ciphertext = ""`
+
+Then in the last for, we will add this:
+
+`            final_ciphertext = letter_0+letter_1+letter_2+letter_3+letter_4+letter_5`
+
+and finally we will add an if down of it:
+
+```
+            if int(java_string_hashcode(final_ciphertext.lower())) == 1472541258:
+```
+
+Here we see firstly: `final_ciphertext.lower()` which means that `final_ciphertext`'s letters will be lowercase.
+
+Next we will send it's value to `java_string_hashcode()` function and it will return it's `.hashCode()` value.
+
+Next with `int(...)` we will make sure that the number it will send,will be the same type as like `1472541258` which is an integer.
+
+And hat's it!
+
+You can find the full code in `script1.py` .
+
+So let's run it!
+
+`python3 script1.py`
+
+For some reason that I cannot think right now,at some `letter_x` there will be some special characters...
+
+But we do not care very much right now.
+
+After 2-3 minutes, it will give us this result:
+```
+0GHZXY
+0GHZZ;
+0GJ<XY
+0GJ<Z;
+0GJ>:Y
+0GJ><;
+```
+We do not care about the results with special characters,so we will choose the first one which is `0GHZXY` .
+
+So we have our flag!
+
+But wait... The java script also has this: `str.hashCode() == 1471587914` which the value is different of ours.
+
+That means that some letters are in lowercase and some are in uppercase.
+
+
 
 Flag: CTFlearn{0gHzxY}
