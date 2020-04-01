@@ -39,11 +39,11 @@ imgs_comb.save( 'Vertical_merged_image.jpg' )
 I tested it,but I was getting this error:
 `AttributeError: module 'PIL' has no attribute 'Image'`
 
-So I added this:
+So I changed import part:
 ```
 import numpy as np
 import PIL
-`from PIL import Image`
+from PIL import Image
 ```
 
 So we have our script that merges the images vertically.
@@ -64,10 +64,56 @@ do
 done
 ```
 
-Now I will add my code in our script...
+You can find the full script in `list_maker.sh` file.
+
+Let's execute it!
+
+`chmod +x `
+
+Now I will add my list in our script...
+
+First delete the `list_im` list from the script and add this:
 
 ```
+list_im = open("my_list.txt",'r') # open my_list.txt
 
+list_im = list_im.read() # read what's inside the file
+
+list_im = list(list_im.split('\n')) # make list by splitting the change line
+
+list_im = list_im[:-1] # delete the last item in the list which is empty
 ```
+
+So our final script is:
+```
+import numpy as np
+import PIL
+from PIL import Image
+
+list_im = open("my_list.txt",'r') # open my_list.txt
+
+list_im = list_im.read() # read what's inside the file
+
+list_im = list(list_im.split('\n')) # make list by splitting the change line
+
+list_im = list_im[:-1] # delete the last item in the list which is empty
+
+
+imgs    = [ PIL.Image.open(i) for i in list_im ]
+
+# pick the image which is the smallest, and resize the others to match it (can be arbitrary image shape here)
+min_shape = sorted( [(np.sum(i.size), i.size ) for i in imgs])[0][1]
+imgs_comb = np.vstack( (np.asarray( i.resize(min_shape) ) for i in imgs ) )
+
+
+
+imgs_comb = np.vstack( (np.asarray( i.resize(min_shape) ) for i in imgs ) ) # for vertical use 'vstack' and for horizontal use 'hstack'
+imgs_comb = PIL.Image.fromarray( imgs_comb)
+imgs_comb.save( 'Vertical_merged_image.png' )
+```
+
+You can find the full script in `image_merger.py` file.
+
+Let's 
 
 Flag: flag{th3_KGB_l0v3s_CTF}
