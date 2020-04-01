@@ -68,7 +68,12 @@ You can find the full script in `list_maker.sh` file.
 
 Let's execute it!
 
-`chmod +x `
+```
+chmod +x list_maker.sh # with this we give executable permissions
+./list_maker.sh
+```
+
+my_list.txt file has been created!
 
 Now I will add my list in our script...
 
@@ -114,6 +119,14 @@ imgs_comb.save( 'Vertical_merged_image.png' )
 
 You can find the full script in `image_merger.py` file.
 
-Let's 
+Let's execute it!
+
+`python3 image_merger.py`
+
+Vertical_merged_image.png has been created!
+
+If we open it we will see a hex string.
+
+If we decrypt it,we will get our flag!
 
 Flag: flag{th3_KGB_l0v3s_CTF}
