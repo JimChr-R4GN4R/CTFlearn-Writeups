@@ -22,9 +22,33 @@ So after some research I found this: https://stackoverflow.com/questions/3022746
 
 and used `dermen`'s script.
 
+```
+import numpy as np
+import PIL
+
+list_im = ['Test1.jpg', 'Test2.jpg', 'Test3.jpg']
+imgs    = [ PIL.Image.open(i) for i in list_im ]
+# pick the image which is the smallest, and resize the others to match it (can be arbitrary image shape here)
+min_shape = sorted( [(np.sum(i.size), i.size ) for i in imgs])[0][1]
+imgs_comb = np.hstack( (np.asarray( i.resize(min_shape) ) for i in imgs ) )
+
+imgs_comb = np.vstack( (np.asarray( i.resize(min_shape) ) for i in imgs ) )
+imgs_comb = PIL.Image.fromarray( imgs_comb)
+imgs_comb.save( 'Vertical_merged_image.jpg' )
+```
+I tested it,but I was getting this error:
+`AttributeError: module 'PIL' has no attribute 'Image'`
+
+So I added this:
+```
+import numpy as np
+import PIL
+`from PIL import Image`
+```
+
 So we have our script that merges the images vertically.
 
-Now we have to make our png list to import the photos...
+Now we have to make our images list to import the photos...
 
 I found this: https://stackoverflow.com/questions/27593227/listing-png-files-in-folder
 
@@ -36,10 +60,14 @@ number=1
 
 for i in {1..499}
 do
-    echo "  '${i}.png',"
+    echo "${i}.png" >> my_list.txt
 done
 ```
 
-What
+Now I will add my code in our script...
+
+```
+
+```
 
 Flag: flag{th3_KGB_l0v3s_CTF}
