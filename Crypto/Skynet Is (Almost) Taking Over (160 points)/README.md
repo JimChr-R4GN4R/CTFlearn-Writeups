@@ -79,7 +79,7 @@ and when we find all `phi`s, then we can find `d = e^(-1) MOD phi` with this pyt
 from Crypto.Util.number import inverse
 
 e = e_NUMBER
-ph = phi_NUMBER
+phi = phi_NUMBER
 
 d = inverse(e, phi)
 ```
